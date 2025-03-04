@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Avenir+Next:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('fonts/AvenirNextLTPro-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Avenir Next', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Landing Area */
+.landing-area {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-image: url('assets/anc-web-landing-bg.svg'); /* Update with the correct path */
+    background-size: cover;
+    background-position: center;
+}
+
+.logo-container {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo {
+    max-width: 150px; /* Adjust as needed */
+    height: auto;
+}
+
+.landing-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 80px; /* Adjust based on logo height */
+}
+
+.left-landing, .right-landing {
+    width: 50%;
+}
+
+.left-landing {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.right-landing {
+    /* Add any background image or styling here */
+    background: transparent;
+}
+
+.lead-text {
+    font-size: 3rem;
+    margin-bottom: 5vh;
+}
+
+.sub-lead-text {
+    font-size: 2rem;
+    margin-bottom: 5vh;
+}
+
+.lead-text, .sub-lead-text {
+    color: white;
+}
+
+.cta-button {
+    background: #2dc4f3;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: fit-content;
+    text-transform: uppercase;
+}
+
+/* Web Message */
+.web-message {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4vh;
+    font-size: 24px;
+}
+
+.web-message .web-message-text {
+    margin-bottom: 2vh;
+}
+
+
+/* Details Sections */
+.details-section {
+    display: flex;
+    min-height: 50vh;
+}
+
+.details-section > div {
+    width: 50%;
+}
+
+.info-item {
+    max-width: 50%;
+    line-height: 2;
+}
+
+.info-item-reversed {
+    line-height: 2;
+    width: 50%;
+    margin-left: auto;
+}
+
+.details-picture-1 {
+    background-image: url('assets/anchoride-info-consulting-bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.details-picture-2 {
+    background-image: url('assets/anchoride-info-technology-bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.details-picture-3 {
+    background-image: url('assets/anchoride-info-cloud-bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.details-picture-4 {
+    background-image: url('assets/anchoride-info-operations-bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.details-info-1, .details-info-2 {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.details-info-1 {
+    text-align: left;
+}
+
+.details-info-2 {
+    margin-left: auto;
+    text-align: right;
+}
+
+.placeholder-image {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+}
+
+/* Footer */
+.footer-area {
+    background: #343536;
+    color: white;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-column {
+    text-align: center;
+    flex: 1;
+    padding: 0 5% 0 5%;
+    line-height: 2;
+}
+
+.footer-logo {
+    margin-bottom: 5%;
+    display: flex; 
+    align-items: center;
+}
+
+.footer-logo img {
+    margin-right: 10px;
+}
+
+.footer-text {
+    text-align: left;
+}
+
+.centered-text {
+    text-align: center;
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .landing-area, .details-section {
+        flex-direction: column;
+    }
+    
+    .left-landing, .right-landing,
+    .details-section > div {
+        width: 100%;
+        height: 50vh;
+    }
+    
+    .lead-text {
+        font-size: 2rem;
+    }
+    
+    .sub-lead-text {
+        font-size: 1.5rem;
+    }
+}
+
+.center-aligned {
+    text-align: center;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.call-to-action-message {
+    color: white;
+    background-color: #2DC4F3;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4vh;
+    font-size: 24px;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+a:active {
+    color: #23527c;
+}
+
+a:visited {
+    color: #666;
+}
+
+a:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #337ab7;
+}
+
+
+/* Define the fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to elements with the class 'appear' */
+.appear {
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0; /* Start with the element invisible */
+}
+
+.appear.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Delay animations for different sections */
+.details-section.appear {
+    animation-delay: 0.5s;
+}
+
+.details-section.reversed.appear {
+    animation-delay: 1s;
+}
+
+.call-to-action-message.appear {
+    animation-delay: 1.5s;
+}
+
+.footer-area.appear {
+    animation-delay: 2s;
+}
